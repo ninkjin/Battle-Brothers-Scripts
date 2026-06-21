@@ -1,5 +1,6 @@
 # Battle Brothers Source Scripts
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [中文说明](README_zh.md)
 
 Complete Squirrel script source code for **Battle Brothers**, ready for modding.
@@ -51,3 +52,7 @@ The game loads all zip files from `data/` on startup. Your mod's scripts overrid
 ## Verification Tool
 
 The `tools/` folder contains a decompiler for regenerating the scripts from game memory. **Not needed for modding** — only for verifying scripts match the running game. See [tools/README.md](tools/README.md).
+
+## License
+
+[MIT](LICENSE)

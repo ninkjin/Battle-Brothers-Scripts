@@ -1,5 +1,6 @@
 # Battle Brothers 游戏脚本源码
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [English](README.md)
 
 **Battle Brothers** 完整 Squirrel 脚本源码，可直接用于 Mod 制作。
@@ -51,3 +52,7 @@ my_mod.zip
 ## 验证工具
 
 `tools/` 文件夹包含一个反编译器，用于从游戏内存重新生成脚本。**制作 Mod 不需要这个工具**，仅用于确认脚本与运行中的游戏一致。详见 [tools/README.md](tools/README.md)。
+
+## 许可证
+
+[MIT](LICENSE)
