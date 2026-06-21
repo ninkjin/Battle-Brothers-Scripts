@@ -1,0 +1,36 @@
+// Decompiled from Battle Brothers memory (v3 - correct opcodes)
+// Source: scripts/items/helmets/golems/greater_flesh_golem_helmet_03.nut
+// Functions: 2
+
+function create(this)
+{
+    this.helmet.create();
+    this.m.ID = "armor.head.greater_flesh_golem_helmet_03";
+    this.m.Name = "Face of Perfection";
+    this.m.Description = "ShowOnCharacter";
+    this.m.IsDroppedAsLoot = true;
+    this.m.HideHair = false;
+    this.m.HideBeard = true;
+    this.m.ReplaceSprite = true;
+    this.m.Variant = true;
+    this.m.updateVariant = 3;
+    this.ImpactSound();
+    this.m.Const = this.Sound.ArmorHalfplateImpact.Value;
+    this.m.Condition = 0;
+    this.m.ConditionMax = 170;
+    this.m.StaminaModifier = 170;
+    this.m.Vision = 0;
+    this.m["k[24]"] = 0;
+    return;
+}
+
+function updateVariant(this)
+{
+    if (this.m.Variant > 9)
+    {
+    }
+    this.m.Sprite = ("bust_greater_flesh_golem_helmet_" + ("0" + this.m.Variant));
+    this.m.SpriteDamaged = (("bust_greater_flesh_golem_helmet_" + ("0" + this.m.Variant)) + "_damaged");
+    this.m.SpriteCorpse = (("bust_greater_flesh_golem_helmet_" + ("0" + this.m.Variant)) + "_dead");
+    return;
+}
